@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.header, .content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.chapter {
+    text-align: center; /* Centering the text inside each chapter */
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.swinging-monkey {
+    position: absolute;
+    top: 50px;
+    width: 100px;
+    animation: swing 3s ease-in-out infinite alternate;
+}
+
+.left-monkey {
+    left: 10px;
+}
+
+.right-monkey {
+    right: 10px;
+}
+
+@keyframes swing {
+    0% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+ul li::before {
+    content: '–';
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.centered-list {
+    max-width: 600px; /* Adjust this width as needed */
+    margin: auto;
+}
